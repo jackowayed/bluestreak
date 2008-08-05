@@ -1,0 +1,53 @@
+<p>
+  <b>Title:</b>
+  <%= @article.title %>
+</p>
+
+<p>
+  <b>Section:</b>
+  <%=h @article.section %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @article.date %>
+</p>
+
+<p>
+  <b>School year:</b>
+  <%=h @article.school_year %>
+</p>
+
+<p>
+  <b>Issue:</b>
+  <%=h @article.issue %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @article.author %>
+</p>
+
+<p>
+  <b>Author position:</b>
+  <%=h @article.author_position %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @article.body %>
+</p>
+
+<p>
+  <b>Front rank:</b>
+  <%=h @article.front_rank %>
+</p>
+
+<p>
+  <b>Section rank:</b>
+  <%=h @article.section_rank %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

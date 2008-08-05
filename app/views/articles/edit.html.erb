@@ -1,0 +1,52 @@
+<h1>Editing article</h1>
+
+<% form_for(@article) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :section %><br />
+    <%= f.text_field :section %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :school_year %><br />
+    <%= f.text_field :school_year %>
+  </p>
+  <p>
+    <%= f.label :issue %><br />
+    <%= f.text_field :issue %>
+  </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :author_position %><br />
+    <%= f.text_field :author_position %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.label :front_rank %><br />
+    <%= f.text_field :front_rank %>
+  </p>
+  <p>
+    <%= f.label :section_rank %><br />
+    <%= f.text_field :section_rank %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @article %> |
+<%= link_to 'Back', articles_path %>

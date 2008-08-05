@@ -2603,3 +2603,137 @@ c2h7AAY6CkB1c2VkewA=--0739e38ec70bab8f582b370db9896c9ee659a644
 Rendering template within layouts/articles
 Rendering articles/show
 Completed in 1.30368 (0 reqs/sec) | Rendering: 0.18417 (14%) | DB: 0.72044 (55%) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2008-08-04 21:52:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mSQL (0.000437)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000343)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Load (0.000475)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 0.08573 (11 reqs/sec) | Rendering: 0.04542 (52%) | DB: 0.00125 (1%) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2008-08-04 21:52:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"new", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.003817)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 0.67032 (1 reqs/sec) | Rendering: 0.61306 (91%) | DB: 0.00382 (0%) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2008-08-04 21:53:40) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"article"=>{"date(1i)"=>"2008", "school_year"=>"2008", "title"=>"World Ends Due to Lack of Cheese", "date(2i)"=>"8", "body"=>"Lorem ipsum pro legere efficiantur neglegentur no, per vidit vitae singulis te, id sea vituperatoribus quaestio. Postea forensibus quo an. Dicam malorum mei at. Bonorum commune neglegentur sed id. Modus fierent scaevola ne per.\r\n\r\nNe augue vidisse consulatu nec, ne mei ridens facilis iudicabit. Bonorum saperet qui in, vel te zzril electram, has elit epicurei ea. Aliquid alienum epicurei ut his, at nam idque aperiri. Et his mollis audiam. Ad vis audiam omittantur. Ex quis latine eam, semper prompta admodum has ei, wisi inani molestie sea cu.", "date(3i)"=>"5", "author"=>"Daniel Jackoway", "front_rank"=>"-1", "issue"=>"1", "author_position"=>"Web Editor", "section"=>"Sports", "section_rank"=>"-1"}, "commit"=>"Create", "authenticity_token"=>"869be5b5949439303ba0dbea716c5b2c3ea37234", "action"=>"create", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.003901)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mSQL (0.000314)[0m   [0mBEGIN[0m
+  [4;36;1mArticle Create (0.043008)[0m   [0;1mINSERT INTO `articles` (`school_year`, `updated_at`, `title`, `body`, `date`, `author`, `front_rank`, `issue`, `author_position`, `section`, `section_rank`, `created_at`) VALUES(2008, '2008-08-05 01:53:40', 'World Ends Due to Lack of Cheese', 'Lorem ipsum pro legere efficiantur neglegentur no, per vidit vitae singulis te, id sea vituperatoribus quaestio. Postea forensibus quo an. Dicam malorum mei at. Bonorum commune neglegentur sed id. Modus fierent scaevola ne per.\r\n\r\nNe augue vidisse consulatu nec, ne mei ridens facilis iudicabit. Bonorum saperet qui in, vel te zzril electram, has elit epicurei ea. Aliquid alienum epicurei ut his, at nam idque aperiri. Et his mollis audiam. Ad vis audiam omittantur. Ex quis latine eam, semper prompta admodum has ei, wisi inani molestie sea cu.', '2008-08-05', 'Daniel Jackoway', -1, 1, 'Web Editor', 'Sports', -1, '2008-08-05 01:53:40')[0m
+  [4;35;1mSQL (0.043261)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 0.20038 (4 reqs/sec) | DB: 0.09048 (45%) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2008-08-04 21:53:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdG--ad54c27ef985496050ba3708b1ee81443d86de0b
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.003205)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.037383)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 0.24405 (4 reqs/sec) | Rendering: 0.16153 (66%) | DB: 0.04059 (16%) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2008-08-04 21:53:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdU--f84ceb53d3f9277ef3025a9ed2411c3a21232821
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.000927)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (0.003697)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.28688 (3 reqs/sec) | Rendering: 0.24116 (84%) | DB: 0.00462 (1%) | 200 OK [http://localhost/articles]
+
+
+Processing SectionsController#sports (for 127.0.0.1 at 2008-08-04 22:09:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"sports", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.016035)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'sports') [0m
+Rendering sections/sports
+  [4;35;1mArticle Columns (0.013862)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.15961 (6 reqs/sec) | Rendering: 0.05993 (37%) | DB: 0.02990 (18%) | 200 OK [http://localhost/sections/sports]
+
+
+Processing SectionsController#sports (for 127.0.0.1 at 2008-08-04 22:10:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"sports", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.000386)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'sports') [0m
+Rendering sections/sports
+  [4;35;1mArticle Columns (0.003020)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.08947 (11 reqs/sec) | Rendering: 0.04631 (51%) | DB: 0.00341 (3%) | 200 OK [http://localhost/sections/sports]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2008-08-05 01:33:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"new", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.419228)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 0.65413 (1 reqs/sec) | Rendering: 0.05993 (9%) | DB: 0.41923 (64%) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2008-08-05 01:34:47) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"article"=>{"date(1i)"=>"2008", "school_year"=>"2008", "title"=>"SUUSI", "date(2i)"=>"8", "body"=>"Lorem ipsum oporteat petentium expetendis ei has, probatus gubergren et sed, ex forensibus vituperatoribus mentitum eos. Offendit officiis at cum, ut vis accumsan pericula, ut labitur dolores conceptam nam. Qui ei meis appetere, cu nec inermis consetetur. Sit oratio eleifend cu, an sed brute viderer lucilius. Ne quo lobortis postulant, mei in veri dolorem honestatis. Ex porro accusam laboramus est. In per falli putant, nobis populo dissentiunt sit an.\r\n\r\nViris posidonium qui an. Solet perpetua principes ne eam. Sonet offendit quaerendum quo at. Ut voluptua quaestio expetenda mei. Te discere delicatissimi pro.", "date(3i)"=>"5", "author"=>"Daniel Jackoway", "front_rank"=>"-1", "issue"=>"1", "author_position"=>"Web Editor", "section"=>"Entertainment", "section_rank"=>"-1"}, "commit"=>"Create", "authenticity_token"=>"869be5b5949439303ba0dbea716c5b2c3ea37234", "action"=>"create", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.002983)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mSQL (0.026669)[0m   [0;1mBEGIN[0m
+  [4;35;1mArticle Create (0.358835)[0m   [0mINSERT INTO `articles` (`school_year`, `updated_at`, `title`, `body`, `date`, `author`, `front_rank`, `issue`, `author_position`, `section`, `section_rank`, `created_at`) VALUES(2008, '2008-08-05 05:34:47', 'SUUSI', 'Lorem ipsum oporteat petentium expetendis ei has, probatus gubergren et sed, ex forensibus vituperatoribus mentitum eos. Offendit officiis at cum, ut vis accumsan pericula, ut labitur dolores conceptam nam. Qui ei meis appetere, cu nec inermis consetetur. Sit oratio eleifend cu, an sed brute viderer lucilius. Ne quo lobortis postulant, mei in veri dolorem honestatis. Ex porro accusam laboramus est. In per falli putant, nobis populo dissentiunt sit an.\r\n\r\nViris posidonium qui an. Solet perpetua principes ne eam. Sonet offendit quaerendum quo at. Ut voluptua quaestio expetenda mei. Te discere delicatissimi pro.', '2008-08-05', 'Daniel Jackoway', -1, 1, 'Web Editor', 'Entertainment', -1, '2008-08-05 05:34:47')[0m
+  [4;36;1mSQL (0.132964)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/2
+Completed in 0.61709 (1 reqs/sec) | DB: 0.52145 (84%) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2008-08-05 01:34:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdG--ad54c27ef985496050ba3708b1ee81443d86de0b
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.002918)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (0.055742)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 0.12156 (8 reqs/sec) | Rendering: 0.02275 (18%) | DB: 0.05866 (48%) | 200 OK [http://localhost/articles/2]
+
+
+Processing SectionsController#sports (for 127.0.0.1 at 2008-08-05 01:34:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdU--f84ceb53d3f9277ef3025a9ed2411c3a21232821
+  Parameters: {"action"=>"sports", "controller"=>"sections"}
+  [4;35;1mArticle Load (0.001532)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`section` = 'sports') [0m
+Rendering sections/sports
+  [4;36;1mArticle Columns (0.003780)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 0.07043 (14 reqs/sec) | Rendering: 0.02604 (36%) | DB: 0.00531 (7%) | 200 OK [http://localhost/sections/sports]

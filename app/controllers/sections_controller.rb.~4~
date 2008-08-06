@@ -3,6 +3,6 @@ class SectionsController < ApplicationController
   #  @articles = Article.find(:all, :conditions=>{ :section =>"sports"})
   #end
   def show
-    @articles = Article.find(:all, :conditions=>{ :section=>params[:name].capitalize})
+    @articles = Article.find(:all, :conditions=>{ :section=>:name.capitalize})
   end
 end

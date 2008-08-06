@@ -2779,3 +2779,230 @@ c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
   [4;35;1mArticle Load (0.010325)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`section` = '--- :name\n') [0m
 Rendering sections/show
 Completed in 0.09411 (10 reqs/sec) | Rendering: 0.00952 (10%) | DB: 0.01032 (10%) | 200 OK [http://localhost/sections/sports]
+
+
+Processing SectionsController#show (for 127.0.0.1 at 2008-08-05 16:22:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"name"=>"sports", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.032552)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Sports') [0m
+Rendering sections/show
+  [4;35;1mArticle Columns (0.262572)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.36228 (2 reqs/sec) | Rendering: 0.02768 (7%) | DB: 0.29512 (81%) | 200 OK [http://localhost/sections/sports]
+
+
+Processing SectionsController#show (for 127.0.0.1 at 2008-08-05 16:26:54) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"name"=>"entertainment", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.001146)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Entertainment') [0m
+Rendering sections/show
+  [4;35;1mArticle Columns (0.005107)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.14551 (6 reqs/sec) | Rendering: 0.05497 (37%) | DB: 0.00625 (4%) | 200 OK [http://localhost/sections/entertainment]
+
+
+Processing SectionsController#show (for 127.0.0.1 at 2008-08-05 16:27:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"name"=>"ENTERTAINMENT", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.000392)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Entertainment') [0m
+Rendering sections/show
+  [4;35;1mArticle Columns (0.004349)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.06004 (16 reqs/sec) | Rendering: 0.02625 (43%) | DB: 0.00474 (7%) | 200 OK [http://localhost/sections/ENTERTAINMENT]
+
+
+Processing SectionsController#show (for 127.0.0.1 at 2008-08-05 17:10:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"name"=>"ENTERTAINMENT", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.000446)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Entertainment') [0m
+Rendering sections/show
+  [4;35;1mArticle Columns (0.007311)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.14038 (7 reqs/sec) | Rendering: 0.02128 (15%) | DB: 0.00776 (5%) | 200 OK [http://localhost/sections/ENTERTAINMENT]
+
+
+Processing SectionsController#show (for 127.0.0.1 at 2008-08-06 00:04:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"name"=>"ENTERTAINMENT", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mSQL (0.043934)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000395)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Load (0.038835)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Entertainment') [0m
+Rendering sections/show
+  [4;35;1mArticle Columns (0.055963)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.18168 (5 reqs/sec) | Rendering: 0.04664 (25%) | DB: 0.13913 (76%) | 200 OK [http://localhost/sections/ENTERTAINMENT]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2008-08-06 00:12:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.001007)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (0.020413)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.23240 (4 reqs/sec) | Rendering: 0.12932 (55%) | DB: 0.02142 (9%) | 200 OK [http://localhost/articles]
+
+
+Processing SectionsController#show (for 127.0.0.1 at 2008-08-06 00:12:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"name"=>"sports", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.001123)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Sports') [0m
+Rendering sections/show
+  [4;35;1mArticle Columns (0.002966)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.11917 (8 reqs/sec) | Rendering: 0.04701 (39%) | DB: 0.00409 (3%) | 200 OK [http://localhost/sections/sports]
+
+
+Processing SectionsController#show (for 127.0.0.1 at 2008-08-06 00:13:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"name"=>"sports", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.000378)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Sports') [0m
+Rendering sections/show
+  [4;35;1mArticle Columns (0.011035)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.08399 (11 reqs/sec) | Rendering: 0.03033 (36%) | DB: 0.01141 (13%) | 200 OK [http://localhost/sections/sports]
+
+
+Processing SectionsController#show (for 127.0.0.1 at 2008-08-06 01:00:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"name"=>"sports", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.216645)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Sports') [0m
+Rendering sections/show
+  [4;35;1mArticle Columns (0.490804)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 1.18857 (0 reqs/sec) | Rendering: 0.08855 (7%) | DB: 0.70745 (59%) | 200 OK [http://localhost/sections/sports]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2008-08-06 01:00:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.000405)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (0.004267)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.09204 (10 reqs/sec) | Rendering: 0.03953 (42%) | DB: 0.00467 (5%) | 200 OK [http://localhost/articles/]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2008-08-06 01:05:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.004140)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.375038)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 0.46459 (2 reqs/sec) | Rendering: 0.03820 (8%) | DB: 0.37918 (81%) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2008-08-06 01:06:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.003182)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.000405)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 0.09399 (10 reqs/sec) | Rendering: 0.04458 (47%) | DB: 0.00359 (3%) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2008-08-06 01:07:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.000452)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (0.004251)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.09652 (10 reqs/sec) | Rendering: 0.03648 (37%) | DB: 0.00470 (4%) | 200 OK [http://localhost/articles]
+
+
+Processing SectionsController#index (for 127.0.0.1 at 2008-08-06 01:12:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"action"=>"index", "controller"=>"sections"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SectionsController#show (for 127.0.0.1 at 2008-08-06 01:12:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTVlOTk5MjJiYzk1OTNmMjNlNjU5NjVhZmFiOGU5
+YTAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
+  Parameters: {"name"=>"sports", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.006744)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Sports') [0m
+Rendering sections/show
+  [4;35;1mArticle Columns (0.012320)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.16692 (5 reqs/sec) | Rendering: 0.07109 (42%) | DB: 0.01906 (11%) | 200 OK [http://localhost/sections/sports]

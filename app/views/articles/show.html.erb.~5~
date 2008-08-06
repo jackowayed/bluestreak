@@ -18,7 +18,7 @@
 
 <p>
 
-  <%= make_line_breaks h(@article.body) %>
+  <%=h make_line_breaks h(@article.body) %>
 
   <!--<% text=@article.body.split("\n")
      text.each{|x| %>

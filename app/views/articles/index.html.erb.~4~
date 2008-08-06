@@ -23,7 +23,7 @@
     <td><%=h article.issue %></td>
     <td><%=h article.author %></td>
     <td><%=h article.author_position %></td>
-    <td><%=  make_line_breaks h(article.body) %></td>
+    <td><%=  article.body %></td>
     <td><%=h article.front_rank %></td>
     <td><%=h article.section_rank %></td>
     <!--<td><%= link_to 'Show', article %></td>-->

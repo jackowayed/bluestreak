@@ -16,17 +16,17 @@
 
 <% for article in @articles %>
   <tr>
-    <td><%=h article.title %></td>
+    <td><%= link_to h(article.title), article %></td>
     <td><%=h article.section %></td>
     <td><%=h article.date %></td>
     <td><%=h article.school_year %></td>
     <td><%=h article.issue %></td>
     <td><%=h article.author %></td>
     <td><%=h article.author_position %></td>
-    <td><%=h article.body %></td>
+    <td><%=  make_line_breaks h(article.body) %></td>
     <td><%=h article.front_rank %></td>
     <td><%=h article.section_rank %></td>
-    <td><%= link_to 'Show', article %></td>
+    <!--<td><%= link_to 'Show', article %></td>-->
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

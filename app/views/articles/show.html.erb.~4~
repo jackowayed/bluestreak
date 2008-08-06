@@ -18,13 +18,11 @@
 
 <p>
 
-  <%= make_line_breaks h(@article.body) %>
-
-  <!--<% text=@article.body.split("\n")
+  <% text=@article.body.split("\n")
      text.each{|x| %>
   <%= x %>
   <br />
-  <% } -%>-->
+  <% } -%>
 </p>
 
 

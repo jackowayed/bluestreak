@@ -3006,3 +3006,622 @@ c2h7AAY6CkB1c2VkewA=--2b37430c30a5a1638d42a083c04ded186df14ddb
 Rendering sections/show
   [4;35;1mArticle Columns (0.012320)[0m   [0mSHOW FIELDS FROM `articles`[0m
 Completed in 0.16692 (5 reqs/sec) | Rendering: 0.07109 (42%) | DB: 0.01906 (11%) | 200 OK [http://localhost/sections/sports]
+
+
+Processing SectionsController#index (for 192.168.1.1 at 2008-08-06 11:20:21) [GET]
+  Session ID: dc7508e93bdce4d857e0f19a6ec0b900
+  Parameters: {"action"=>"index", "controller"=>"sections"}
+  [4;36;1mSQL (0.050844)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.016509)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ArticlesController#index (for 192.168.1.1 at 2008-08-06 11:20:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--f395a6345ab7af2849d4f29703ba8e54288f58fd
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.034689)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (0.145811)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.39271 (2 reqs/sec) | Rendering: 0.10248 (26%) | DB: 0.24785 (63%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing SectionsController#show (for 192.168.1.1 at 2008-08-06 11:22:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {"name"=>"news", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.022139)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'News') [0m
+Rendering sections/show
+Completed in 0.10573 (9 reqs/sec) | Rendering: 0.02495 (23%) | DB: 0.02214 (20%) | 200 OK [http://76.99.205.97/sections/news]
+
+
+Processing ApplicationController#index (for 192.168.1.1 at 2008-08-06 11:22:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/article" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ArticlesController#index (for 192.168.1.1 at 2008-08-06 11:22:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.007863)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (0.005851)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 0.13285 (7 reqs/sec) | Rendering: 0.06123 (46%) | DB: 0.01371 (10%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing ArticlesController#index (for 96.245.202.96 at 2008-08-06 11:37:42) [GET]
+  Session ID: c1d70454af2408aaf4f33b6a6e1fef93
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.026971)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (0.078498)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 0.51739 (1 reqs/sec) | Rendering: 0.11704 (22%) | DB: 0.10547 (20%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing ArticlesController#index (for 96.245.202.96 at 2008-08-06 11:38:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZWUxYjE2ZGQxMjEyZDQ3MzQyY2M5Y2U1YzcxYWYy
+Y2MiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4c6bab71fcb19f906898f6b498aef51c6a2406a8
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.000405)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (0.005035)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 0.07040 (14 reqs/sec) | Rendering: 0.02835 (40%) | DB: 0.00544 (7%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing ArticlesController#index (for 96.245.202.96 at 2008-08-06 11:38:30) [GET]
+  Session ID: f83c69607a4b6aee0f635f8f19bc5473
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.000398)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (0.004670)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 0.05720 (17 reqs/sec) | Rendering: 0.02545 (44%) | DB: 0.00507 (8%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing ArticlesController#new (for 96.245.202.96 at 2008-08-06 11:38:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZWQ3YjlhNWUyNDk2NDY5ZjBjYjc0ZGM1MjM1YWE4
+NGUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--8779d88c89b93916cc1412c593075fe545f1e7f3
+  Parameters: {"action"=>"new", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.002970)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 0.66174 (1 reqs/sec) | Rendering: 0.62851 (94%) | DB: 0.00297 (0%) | 200 OK [http://76.99.205.97/articles/new]
+
+
+Processing ArticlesController#index (for 216.9.250.119 at 2008-08-06 11:40:55) [GET]
+  Session ID: 35914ff472a4dae5de77e77c450a359a
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.000408)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (0.010504)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.12832 (7 reqs/sec) | Rendering: 0.05574 (43%) | DB: 0.01091 (8%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing IssuesController#index (for 192.168.1.1 at 2008-08-06 11:49:49) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {"action"=>"index", "controller"=>"issues"}
+  [4;36;1mIssue Load (0.000000)[0m   [0;1mMysql::Error: Table 'bluestreak_development.issues' doesn't exist: SELECT * FROM `issues` [0m
+
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'bluestreak_development.issues' doesn't exist: SELECT * FROM `issues`     ):
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract_adapter.rb:147:in `log'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/mysql_adapter.rb:299:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/mysql_adapter.rb:515:in `select'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:80:in `cache_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:59:in `select_all'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:582:in `find_by_sql'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1341:in `find_every'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:536:in `find'
+    /app/controllers/issues_controller.rb:5:in `index'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SectionsController#show (for 141.157.43.106 at 2008-08-06 11:58:22) [GET]
+  Session ID: 8581286f8ce44b35d78c2331cd4e35fa
+  Parameters: {"name"=>"section_name", "action"=>"show", "controller"=>"sections"}
+  [4;35;1mArticle Load (0.717879)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Section_name') [0m
+Rendering sections/show
+Completed in 1.32376 (0 reqs/sec) | Rendering: 0.08760 (6%) | DB: 0.71788 (54%) | 200 OK [http://76.99.205.97/sections/section_name]
+
+
+Processing ArticlesController#new (for 141.157.43.106 at 2008-08-06 11:58:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--f395a6345ab7af2849d4f29703ba8e54288f58fd
+  Parameters: {"action"=>"new", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.157125)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 0.22031 (4 reqs/sec) | Rendering: 0.03715 (16%) | DB: 0.15712 (71%) | 200 OK [http://76.99.205.97/articles/new]
+
+
+Processing ArticlesController#create (for 141.157.43.106 at 2008-08-06 11:59:36) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTg1MTUxNzNhYWQ2ODg5MzU2MTAzNTAzNGRlNWM3
+MTMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--76f260dea6ca18681f351a981d15612151b1c049
+  Parameters: {"article"=>{"date(1i)"=>"2008", "school_year"=>"2008-2009", "title"=>"Kid tests thing", "date(2i)"=>"8", "body"=>"You know, just wanted to test", "date(3i)"=>"6", "author"=>"Me", "front_rank"=>"-1", "issue"=>"This one", "author_position"=>"Awesome Kid", "section"=>"Any", "section_rank"=>"-1"}, "commit"=>"Create", "authenticity_token"=>"cfc0325162e953297eba6964f36cbb0d597d7ffd", "action"=>"create", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.003124)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mSQL (0.000315)[0m   [0;1mBEGIN[0m
+  [4;35;1mArticle Create (0.164557)[0m   [0mINSERT INTO `articles` (`school_year`, `updated_at`, `title`, `body`, `date`, `author`, `front_rank`, `issue`, `author_position`, `section`, `section_rank`, `created_at`) VALUES(2008, '2008-08-06 15:59:36', 'Kid tests thing', 'You know, just wanted to test', '2008-08-06', 'Me', -1, 0, 'Awesome Kid', 'Any', -1, '2008-08-06 15:59:36')[0m
+  [4;36;1mSQL (0.183014)[0m   [0;1mCOMMIT[0m
+Redirected to http://76.99.205.97:3000/articles/3
+Completed in 0.74695 (1 reqs/sec) | DB: 0.35101 (46%) | 302 Found [http://76.99.205.97/articles]
+
+
+Processing ArticlesController#show (for 141.157.43.106 at 2008-08-06 11:59:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTg1MTUxNzNhYWQ2ODg5MzU2MTAzNTAzNGRlNWM3
+MTMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdG--8679803ea123ed569117735f837aed39c8e12438
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.003414)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (0.033498)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 0.11079 (9 reqs/sec) | Rendering: 0.04690 (42%) | DB: 0.03691 (33%) | 200 OK [http://76.99.205.97/articles/3]
+
+
+Processing ArticlesController#edit (for 141.157.43.106 at 2008-08-06 11:59:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTg1MTUxNzNhYWQ2ODg5MzU2MTAzNTAzNGRlNWM3
+MTMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdU--679aa0ada9a7a4f6e783f3d8455f32ff1f7421e8
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.003008)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (0.000368)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 0.09396 (10 reqs/sec) | Rendering: 0.06363 (67%) | DB: 0.00338 (3%) | 200 OK [http://76.99.205.97/articles/3/edit]
+
+
+Processing ArticlesController#index (for 141.157.43.106 at 2008-08-06 11:59:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTg1MTUxNzNhYWQ2ODg5MzU2MTAzNTAzNGRlNWM3
+MTMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--76f260dea6ca18681f351a981d15612151b1c049
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.036749)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (0.003196)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 0.08889 (11 reqs/sec) | Rendering: 0.02592 (29%) | DB: 0.03995 (44%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing SectionsController#show (for 141.157.43.106 at 2008-08-06 12:00:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTg1MTUxNzNhYWQ2ODg5MzU2MTAzNTAzNGRlNWM3
+MTMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--76f260dea6ca18681f351a981d15612151b1c049
+  Parameters: {"name"=>"section_name", "action"=>"show", "controller"=>"sections"}
+  [4;35;1mArticle Load (0.003646)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Section_name') [0m
+Rendering sections/show
+Completed in 0.09241 (10 reqs/sec) | Rendering: 0.01020 (11%) | DB: 0.00365 (3%) | 200 OK [http://76.99.205.97/sections/section_name]
+
+
+Processing ArticlesController#index (for 141.157.43.106 at 2008-08-06 12:00:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTg1MTUxNzNhYWQ2ODg5MzU2MTAzNTAzNGRlNWM3
+MTMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--76f260dea6ca18681f351a981d15612151b1c049
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.000414)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (0.004607)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.05880 (17 reqs/sec) | Rendering: 0.02890 (49%) | DB: 0.00502 (8%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing ArticlesController#index (for 141.157.43.106 at 2008-08-06 12:03:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTg1MTUxNzNhYWQ2ODg5MzU2MTAzNTAzNGRlNWM3
+MTMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--76f260dea6ca18681f351a981d15612151b1c049
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.000400)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (0.003208)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.08085 (12 reqs/sec) | Rendering: 0.02808 (34%) | DB: 0.00361 (4%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing SectionsController#show (for 141.157.43.106 at 2008-08-06 12:05:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTg1MTUxNzNhYWQ2ODg5MzU2MTAzNTAzNGRlNWM3
+MTMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--76f260dea6ca18681f351a981d15612151b1c049
+  Parameters: {"name"=>"section_name", "action"=>"show", "controller"=>"sections"}
+  [4;36;1mArticle Load (0.000384)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`section` = 'Section_name') [0m
+Rendering sections/show
+Completed in 0.03016 (33 reqs/sec) | Rendering: 0.00329 (10%) | DB: 0.00038 (1%) | 200 OK [http://76.99.205.97/sections/section_name]
+
+
+Processing ArticlesController#index (for 192.168.1.1 at 2008-08-06 12:15:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.000435)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (0.003183)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 0.17011 (5 reqs/sec) | Rendering: 0.05868 (34%) | DB: 0.00362 (2%) | 200 OK [http://76.99.205.97/articles]
+
+
+Processing ArticlesController#new (for 192.168.1.1 at 2008-08-06 12:15:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {"action"=>"new", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.003009)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+
+
+ActionView::TemplateError (undefined method `select_tag' for #<ActionView::Helpers::FormBuilder:0xb6546724>) on line #12 of articles/new.html.erb:
+9:   </p>
+10:   <p>
+11:     <%= f.label :section %><br />
+12:     <%= f.select_tag :section,
+13:     "<option>Editorial</option><option>Entertainment</option><option>Features</option><option>News</option><option>School News</option><option>Sports</option>"
+14:     %>
+15:     <!--<%= f.text_field :section %>-->
+
+    app/views/articles/new.html.erb:12:in `_run_erb_47app47views47articles47new46html46erb'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:317:in `fields_for'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:253:in `form_for'
+    app/views/articles/new.html.erb:3:in `_run_erb_47app47views47articles47new46html46erb'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/articles_controller.rb:31:in `new'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/1.8/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+    /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+    /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/1.8/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:129:in `run'
+    /usr/lib/ruby/1.8/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/1.8/mongrel_rails:282
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ArticlesController#new (for 192.168.1.1 at 2008-08-06 12:18:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {"action"=>"new", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.003383)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 0.10140 (9 reqs/sec) | Rendering: 0.05960 (58%) | DB: 0.00338 (3%) | 200 OK [http://76.99.205.97/articles/new]
+
+
+Processing ArticlesController#create (for 192.168.1.1 at 2008-08-06 12:35:33) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {"article"=>{"date(1i)"=>"2008", "school_year"=>"2008", "title"=>"Stuff Happened", "date(2i)"=>"8", "body"=>"Lorem ipsum nothing.", "date(3i)"=>"6", "author"=>"Daniel Jackoway", "front_rank"=>"-1", "issue"=>"1", "author_position"=>"Web Editor", "section_rank"=>"-1"}, "commit"=>"Create", "authenticity_token"=>"574c8354233c1d0ee65b070169c02688d393c4a6", "action"=>"create", "controller"=>"articles", "section"=>"Editorial"}
+  [4;35;1mArticle Columns (0.003155)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mSQL (0.000306)[0m   [0;1mBEGIN[0m
+  [4;35;1mArticle Create (0.028419)[0m   [0mINSERT INTO `articles` (`school_year`, `updated_at`, `title`, `body`, `date`, `author`, `front_rank`, `issue`, `author_position`, `section`, `section_rank`, `created_at`) VALUES(2008, '2008-08-06 16:35:33', 'Stuff Happened', 'Lorem ipsum nothing.', '2008-08-06', 'Daniel Jackoway', -1, 1, 'Web Editor', NULL, -1, '2008-08-06 16:35:33')[0m
+  [4;36;1mSQL (0.038175)[0m   [0;1mCOMMIT[0m
+Redirected to http://76.99.205.97:3000/articles/4
+Completed in 0.15826 (6 reqs/sec) | DB: 0.07006 (44%) | 302 Found [http://76.99.205.97/articles]
+
+
+Processing ArticlesController#show (for 192.168.1.1 at 2008-08-06 12:35:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdG--f6acdd7d3ee54b32cc6aa10e090b02704cb05a0d
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.003184)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (0.008111)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 0.06895 (14 reqs/sec) | Rendering: 0.01735 (25%) | DB: 0.01130 (16%) | 200 OK [http://76.99.205.97/articles/4]
+
+
+Processing ArticlesController#index (for 192.168.1.1 at 2008-08-06 12:35:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdU--7bb355631a9233732686e4637dedc1483130cc03
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.001007)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;36;1mArticle Columns (0.008218)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 0.09245 (10 reqs/sec) | Rendering: 0.04053 (43%) | DB: 0.00922 (9%) | 200 OK [http://76.99.205.97/articles]
+  [4;36;1mSQL (0.070075)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.060342)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Load (0.047015)[0m   [0;1mSELECT * FROM `articles` ORDER BY articles.id DESC LIMIT 1[0m
+  [4;35;1mArticle Columns (0.028655)[0m   [0mSHOW FIELDS FROM `articles`[0m
+
+
+Processing ArticlesController#new (for 192.168.1.1 at 2008-08-06 12:51:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {"action"=>"new", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.003405)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 0.11260 (8 reqs/sec) | Rendering: 0.06943 (61%) | DB: 0.00340 (3%) | 200 OK [http://76.99.205.97/articles/new]
+
+
+Processing ArticlesController#create (for 192.168.1.1 at 2008-08-06 12:51:41) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--e781361b971011c1adecf6d73fa98cd424463b1b
+  Parameters: {"article"=>{"date(1i)"=>"2008", "school_year"=>"2008", "title"=>"Explosions Occur", "date(2i)"=>"8", "body"=>"Boom.", "date(3i)"=>"6", "author"=>"Daniel Jackoway", "front_rank"=>"-1", "issue"=>"1", "author_position"=>"Web Editor", "section_rank"=>"-1"}, "commit"=>"Create", "authenticity_token"=>"574c8354233c1d0ee65b070169c02688d393c4a6", "action"=>"create", "controller"=>"articles", "section"=>"Editoral"}
+  [4;36;1mArticle Columns (0.003906)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mSQL (0.000321)[0m   [0mBEGIN[0m
+  [4;36;1mArticle Create (0.000900)[0m   [0;1mINSERT INTO `articles` (`school_year`, `updated_at`, `title`, `body`, `date`, `author`, `front_rank`, `issue`, `author_position`, `section`, `section_rank`, `created_at`) VALUES(2008, '2008-08-06 16:51:41', 'Explosions Occur', 'Boom.', '2008-08-06', 'Daniel Jackoway', -1, 1, 'Web Editor', NULL, -1, '2008-08-06 16:51:41')[0m
+  [4;35;1mSQL (0.056467)[0m   [0mCOMMIT[0m
+Redirected to http://76.99.205.97:3000/articles/5
+Completed in 0.15590 (6 reqs/sec) | DB: 0.06159 (39%) | 302 Found [http://76.99.205.97/articles]
+
+
+Processing ArticlesController#show (for 192.168.1.1 at 2008-08-06 12:51:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdG--f6acdd7d3ee54b32cc6aa10e090b02704cb05a0d
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.002991)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.000973)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 0.06701 (14 reqs/sec) | Rendering: 0.02906 (43%) | DB: 0.00396 (5%) | 200 OK [http://76.99.205.97/articles/5]
+
+
+Processing ArticlesController#index (for 192.168.1.1 at 2008-08-06 12:51:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlN2U4NTM4OGRmNGIzZDg4OWM0N2RiNDI1NTYyNDgy
+ZjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIiZBcnRpY2xlIHdhcyBzdWNjZXNzZnVsbHkgY3JlYXRl
+ZC4GOgpAdXNlZHsGOwdU--7bb355631a9233732686e4637dedc1483130cc03
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.001632)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/articles
+Rendering articles/index
+  [4;35;1mArticle Columns (0.003823)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 0.09558 (10 reqs/sec) | Rendering: 0.04557 (47%) | DB: 0.00546 (5%) | 200 OK [http://76.99.205.97/articles]

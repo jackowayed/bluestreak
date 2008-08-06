@@ -9,3 +9,9 @@ _ home page
 _ have sections/home do previews of bigger articles
 
 _ all the pretty visual stuff
+
+_ verify input
+
+_ error handling
+
+_ images

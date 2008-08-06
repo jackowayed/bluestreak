@@ -9,9 +9,8 @@
   </p>
   <p>
     <%= f.label :section %><br />
-    <%= select_tag :section,
-    "<option value='Editoral'>Editorial</option><option>Entertainment</option><option>Features</option><option>News</option><option>School News</option><option>Sports</option>"
-    %>
+    <%= select_tag( :section, options_for_select(["Editorial",
+    "Entertainment", "Features", "News", "School News", "Sports"]))%>
     <!--<%= f.text_field :section %>-->
   </p>
   <p>

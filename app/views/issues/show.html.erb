@@ -1,0 +1,18 @@
+<p>
+  <b>Est pub date:</b>
+  <%=h @issue.est_pub_date %>
+</p>
+
+<p>
+  <b>School year:</b>
+  <%=h @issue.school_year %>
+</p>
+
+<p>
+  <b>Current:</b>
+  <%=h @issue.current %>
+</p>
+
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>

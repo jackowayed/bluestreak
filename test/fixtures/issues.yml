@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  est_pub_date: 2008-08-06
+  school_year: 1
+  current: false
+
+two:
+  est_pub_date: 2008-08-06
+  school_year: 1
+  current: false

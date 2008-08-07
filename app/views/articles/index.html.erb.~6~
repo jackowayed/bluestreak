@@ -19,8 +19,8 @@
     <td><%= link_to h(article.title), article %></td>
     <td><%=h article.section %></td>
     <td><%=h article.date %></td>
-    <td><%=h article.issue.school_year %></td>
-    <td><%=h article.issue.number %></td>
+    <td><%=h article.school_year %></td>
+    <td><%=h article.issue %></td>
     <td><%=h article.author %></td>
     <td><%=h article.author_position %></td>
     <td><%=  make_line_breaks h(article.body) %></td>

@@ -22,7 +22,6 @@
     <%= f.label :date %><br />
     <%= f.date_select :date %>
   </p>
-  <% if "Michael"=="Java Programmer" -%>
   <p>
     <%= f.label :school_year %><br />
     <%= f.text_field :school_year %>
@@ -30,12 +29,6 @@
   <p>
     <%= f.label :issue %><br />
     <%= f.text_field :issue %>
-  </p>
-  <% end -%>
-  <p>
-  <%= f.label :issue_id %>
-  <%= f.select(:issue_id, Issue.find(:all).collect{|i|
-    [i.school_year.to_s + ":" +i.number.to_s, i.id]}) %>
   </p>
   <p>
     <%= f.label :author %><br />

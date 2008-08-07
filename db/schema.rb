@@ -15,8 +15,7 @@ ActiveRecord::Schema.define(:version => 20080806221744) do
     t.string   "title"
     t.string   "section"
     t.date     "date"
-    t.integer  "school_year",     :limit => 11
-    t.integer  "issue",           :limit => 11
+    t.integer  "issue_id",        :limit => 11
     t.string   "author"
     t.string   "author_position"
     t.text     "body"

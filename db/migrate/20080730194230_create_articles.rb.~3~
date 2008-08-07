@@ -4,8 +4,8 @@ class CreateArticles < ActiveRecord::Migration
       t.string :title
       t.string :section
       t.date :date
-      #t.integer :school_year#, :default => 2008
-      t.integer :issue_id
+      t.integer :school_year#, :default => 2008
+      t.integer :issue
       t.string :author
       t.string :author_position
       t.text :body

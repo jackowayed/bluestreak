@@ -19,13 +19,13 @@
     <%= f.label :date %><br />
     <%= f.date_select :date %>
   </p>
+  <!--<p>
+      </p>-->
   <p>
-    <%= f.label :school_year %><br />
-    <%= f.text_field :school_year %>
-  </p>
-  <p>
-    <%= f.label :issue %><br />
-    <%= f.text_field :issue %>
+    <%= f.label :issue_id %><!--<br />
+    <%= f.text_field :issue %>-->
+    <%= f.select(:issue_id, Issue.find(:all).collect{|i|
+    [i.school_year.to_s + ":" +i.number.to_s, i.id]}) %>
   </p>
   <p>
     <%= f.label :author %><br />

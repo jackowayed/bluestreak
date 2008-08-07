@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080730194230) do
+ActiveRecord::Schema.define(:version => 20080806221744) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(:version => 20080730194230) do
     t.text     "body"
     t.integer  "front_rank",      :limit => 11, :default => -1
     t.integer  "section_rank",    :limit => 11, :default => -1
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "issues", :force => true do |t|
+    t.integer  "number",      :limit => 11
+    t.integer  "school_year", :limit => 11
+    t.date     "est_date"
+    t.boolean  "current"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

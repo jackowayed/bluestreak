@@ -4,12 +4,16 @@
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :est_pub_date %><br />
-    <%= f.date_select :est_pub_date %>
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
   </p>
   <p>
     <%= f.label :school_year %><br />
     <%= f.text_field :school_year %>
+  </p>
+  <p>
+    <%= f.label :est_date %><br />
+    <%= f.date_select :est_date %>
   </p>
   <p>
     <%= f.label :current %><br />

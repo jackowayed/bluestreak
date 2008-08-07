@@ -1,6 +1,6 @@
 <h1>Listing articles</h1>
 
-<table border='1'>
+<table>
   <tr>
     <th>Title</th>
     <th>Section</th>

@@ -2,15 +2,17 @@
 
 <table>
   <tr>
-    <th>Est pub date</th>
+    <th>Number</th>
     <th>School year</th>
+    <th>Est date</th>
     <th>Current</th>
   </tr>
 
 <% for issue in @issues %>
   <tr>
-    <td><%=h issue.est_pub_date %></td>
+    <td><%=h issue.number %></td>
     <td><%=h issue.school_year %></td>
+    <td><%=h issue.est_date %></td>
     <td><%=h issue.current %></td>
     <td><%= link_to 'Show', issue %></td>
     <td><%= link_to 'Edit', edit_issue_path(issue) %></td>

@@ -6,7 +6,7 @@
 </p>-->
 
 <p>
-  <%=h @article.date %><br/>
+  <%=h @article.date %>
   <%=h @article.section %>
 </p>
 

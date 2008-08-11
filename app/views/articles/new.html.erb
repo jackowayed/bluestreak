@@ -25,7 +25,7 @@
     <%= f.label :issue_id %><!--<br />
     <%= f.text_field :issue %>-->
     <%= f.select(:issue_id, Issue.find(:all).collect{|i|
-    [i.school_year.to_s + ":" +i.number.to_s, i.id]}) %>
+    [i.school_year.to_s + ":" +i.number.to_s, i.id]}.reverse) %>
   </p>
   <p>
     <%= f.label :author %><br />
@@ -46,6 +46,10 @@
   <p>
     <%= f.label :section_rank %><br />
     <%= f.text_field :section_rank %>
+  </p>
+  <p>
+    <%= f.label :image %>
+    <%= f.file_field :uploaded_data %>
   </p>
   <p>
     <%= f.submit "Create" %>

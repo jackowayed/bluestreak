@@ -5,7 +5,7 @@
     <th>Number</th>
     <th>School year</th>
     <th>Est date</th>
-    <th>Current</th>
+    <th>Current?</th>
   </tr>
 
 <% for issue in @issues %>
@@ -13,7 +13,7 @@
     <td><%=h issue.number %></td>
     <td><%=h issue.school_year %></td>
     <td><%=h issue.est_date %></td>
-    <td><%=h issue.current %></td>
+    <td><%=h issue.current? %></td>
     <td><%= link_to 'Show', issue %></td>
     <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
     <td><%= link_to 'Destroy', issue, :confirm => 'Are you sure?', :method => :delete %></td>

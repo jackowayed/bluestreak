@@ -1,0 +1,16 @@
+class CreateIssues < ActiveRecord::Migration
+  def self.up
+    create_table :issues do |t|
+      t.integer :number
+      t.integer :school_year
+      t.date :est_date
+      t.boolean :current
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :issues
+  end
+end

@@ -3,11 +3,11 @@
 one:
   number: 1
   school_year: 1
-  est_date: 2008-08-06
-  current: false
+  est_date: 2008-08-11
+  current?: false
 
 two:
   number: 1
   school_year: 1
-  est_date: 2008-08-06
-  current: false
+  est_date: 2008-08-11
+  current?: false

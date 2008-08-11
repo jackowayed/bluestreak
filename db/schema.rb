@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080811172427) do
+ActiveRecord::Schema.define(:version => 20080811190328) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -26,10 +26,11 @@ ActiveRecord::Schema.define(:version => 20080811172427) do
   end
 
   create_table "images", :force => true do |t|
+    t.string   "caption"
+    t.string   "credit"
     t.integer  "article_id",   :limit => 11
     t.string   "content_type"
     t.string   "filename"
-    t.string   "thumbnail"
     t.integer  "size",         :limit => 11
     t.integer  "width",        :limit => 11
     t.integer  "height",       :limit => 11

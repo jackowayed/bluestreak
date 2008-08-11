@@ -1,0 +1,34 @@
+<h1>Listing images</h1>
+
+<table>
+  <tr>
+    <th>Caption</th>
+    <th>Credit</th>
+    <th>Article</th>
+    <th>Content type</th>
+    <th>Filename</th>
+    <th>Size</th>
+    <th>Width</th>
+    <th>Height</th>
+  </tr>
+
+<% for image in @images %>
+  <tr>
+    <td><%=h image.caption %></td>
+    <td><%=h image.credit %></td>
+    <td><%=h image.article_id %></td>
+    <td><%=h image.content_type %></td>
+    <td><%=h image.filename %></td>
+    <td><%=h image.size %></td>
+    <td><%=h image.width %></td>
+    <td><%=h image.height %></td>
+    <td><%= link_to 'Show', image %></td>
+    <td><%= link_to 'Edit', edit_image_path(image) %></td>
+    <td><%= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New image', new_image_path %>

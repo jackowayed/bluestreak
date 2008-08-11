@@ -47,15 +47,10 @@
     <%= f.label :section_rank %><br />
     <%= f.text_field :section_rank %>
   </p>
-
-  <% if false -%>
   <p>
     <%= f.label :image %>
     <%= f.file_field :uploaded_data %>
   </p>
-  <% end -%>
-
-
   <p>
     <%= f.submit "Create" %>
   </p>

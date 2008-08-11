@@ -1,0 +1,43 @@
+<p>
+  <b>Caption:</b>
+  <%=h @image.caption %>
+</p>
+
+<p>
+  <b>Credit:</b>
+  <%=h @image.credit %>
+</p>
+
+<p>
+  <b>Article:</b>
+  <%=h @image.article_id %>
+</p>
+
+<p>
+  <b>Content type:</b>
+  <%=h @image.content_type %>
+</p>
+
+<p>
+  <b>Filename:</b>
+  <%=h @image.filename %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h @image.size %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%=h @image.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @image.height %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

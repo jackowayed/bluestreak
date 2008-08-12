@@ -4,18 +4,24 @@ one:
   caption: MyString
   credit: MyString
   article_id: 1
-  content_type: MyString
+  parent_id: MyString
   filename: MyString
+  path: MyString
+  content_type: MyString
   size: 1
-  width: 1
   height: 1
+  width: 1
+  thumbnail: MyString
 
 two:
   caption: MyString
   credit: MyString
   article_id: 1
-  content_type: MyString
+  parent_id: MyString
   filename: MyString
+  path: MyString
+  content_type: MyString
   size: 1
-  width: 1
   height: 1
+  width: 1
+  thumbnail: MyString

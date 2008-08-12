@@ -4,11 +4,14 @@ class CreateImages < ActiveRecord::Migration
       t.string :caption
       t.string :credit
       t.integer :article_id
-      t.string :content_type
+      t.string :parent_id
       t.string :filename
+      t.string :path
+      t.string :content_type
       t.integer :size
-      t.integer :width
       t.integer :height
+      t.integer :width
+      t.string :thumbnail
 
       t.timestamps
     end

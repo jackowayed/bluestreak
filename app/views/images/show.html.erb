@@ -14,8 +14,8 @@
 </p>
 
 <p>
-  <b>Content type:</b>
-  <%=h @image.content_type %>
+  <b>Parent:</b>
+  <%=h @image.parent_id %>
 </p>
 
 <p>
@@ -24,8 +24,23 @@
 </p>
 
 <p>
+  <b>Path:</b>
+  <%=h @image.path %>
+</p>
+
+<p>
+  <b>Content type:</b>
+  <%=h @image.content_type %>
+</p>
+
+<p>
   <b>Size:</b>
   <%=h @image.size %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @image.height %>
 </p>
 
 <p>
@@ -34,8 +49,8 @@
 </p>
 
 <p>
-  <b>Height:</b>
-  <%=h @image.height %>
+  <b>Thumbnail:</b>
+  <%=h @image.thumbnail %>
 </p>
 
 

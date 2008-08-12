@@ -5,11 +5,14 @@
     <th>Caption</th>
     <th>Credit</th>
     <th>Article</th>
-    <th>Content type</th>
+    <th>Parent</th>
     <th>Filename</th>
+    <th>Path</th>
+    <th>Content type</th>
     <th>Size</th>
-    <th>Width</th>
     <th>Height</th>
+    <th>Width</th>
+    <th>Thumbnail</th>
   </tr>
 
 <% for image in @images %>
@@ -17,11 +20,14 @@
     <td><%=h image.caption %></td>
     <td><%=h image.credit %></td>
     <td><%=h image.article_id %></td>
-    <td><%=h image.content_type %></td>
+    <td><%=h image.parent_id %></td>
     <td><%=h image.filename %></td>
+    <td><%=h image.path %></td>
+    <td><%=h image.content_type %></td>
     <td><%=h image.size %></td>
-    <td><%=h image.width %></td>
     <td><%=h image.height %></td>
+    <td><%=h image.width %></td>
+    <td><%=h image.thumbnail %></td>
     <td><%= link_to 'Show', image %></td>
     <td><%= link_to 'Edit', edit_image_path(image) %></td>
     <td><%= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete %></td>

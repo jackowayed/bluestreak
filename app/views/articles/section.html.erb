@@ -1,0 +1,39 @@
+<h1>Listing articles</h1>
+
+<table border='1'>
+  <tr>
+    <th>Title</th>
+    <th>Section</th>
+    <th>Date</th>
+    <th>School year</th>
+    <th>Issue</th>
+    <th>Author</th>
+    <th>Author position</th>
+    <th>Body</th>
+    <th>Front rank</th>
+    <th>Section rank</th>
+  </tr>
+
+<% for article in @articles %>
+  <tr>
+    <td><%= link_to h(article.title), article %></td>
+    <td><%=h article.section %></td>
+    <td><%=h article.date %></td>
+    <td><%=h article.issue.school_year %></td>
+    <td><%=h article.issue.number %></td>
+    <td><%=h article.author %></td>
+    <td><%=h article.author_position %></td>
+    <td><%=  make_line_breaks h(article.body) %></td>
+    <td><%=h article.front_rank %></td>
+    <td><%=h article.section_rank %></td>
+    <!--<td><%= link_to 'Show', article %></td>-->
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New article', new_article_path %>
+

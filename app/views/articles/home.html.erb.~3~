@@ -1,6 +1,6 @@
 
 <% @top_articles.each do |article| %>
-<p style="font-size: 20pt"><%= link_to h(article.title), article %></p>
+<p><%= link_to h(article.title), article %></p>
 <% end -%>
 
 
@@ -8,5 +8,10 @@
 <% @list_articles.each do |article| %>
 <p><%= link_to h(article.title), article %></p>
 <% end -%>
+
+<p><%=h  @top_articles %></p>
+<p><%=h  @list_articles %></p>
+
+
 
 

@@ -9,7 +9,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'sections/:name', :controller => 'sections', :action => 'show'
 
   map.root :controller => 'articles', :action => 'home'
-  map.connect 'articles/section/:name', :controller=> 'articles', :action =>'section'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

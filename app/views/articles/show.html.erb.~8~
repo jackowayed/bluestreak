@@ -21,14 +21,13 @@
 
   <%= make_line_breaks h(@article.body) %>
 
-
   <!--<% text=@article.body.split("\n")
      text.each{|x| %>
   <%= x %>
   <br />
   <% } -%>-->
 </p>
-<p> <%= current_issue.id %></p>
+
 
 
 

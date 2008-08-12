@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
   #Issue = 1
   def index
     @articles = Article.find(:all)
-
+    current_issue
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
@@ -86,17 +86,13 @@ class ArticlesController < ApplicationController
   end
   def home
 
-    @articles = Article.find_all_by_issue_id(current_issue.id)
-
+   @articles = Article.find_all_by_issue_id(current_issue.id)
+#    @articles = Article.find_all_by_issue_id(Issue.find_by_current(true).id)
     @top_articles = []
     @list_articles = []
     @articles.each{ |x| ((x.front_rank==-1)?(@list_articles):(@top_articles)) << x }
   end
+  def section
+    @articles = current_issue.articles.find_all_by_section(params[:name].capitalize)
+  end
 end
-#def section
-#  @articles = Article.find(:all, :params =>{ :issue=Issue, :school_year=SchoolYear})
-  #  @articles = Article.find(:all, :params =>{:issue='1', :school_year='2008'})
-#  @articles = Article.find(:all)
-#end
-
-

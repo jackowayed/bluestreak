@@ -1,8 +1,8 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
-  #SchoolYear = 2008
-  #Issue = 1
+  SchoolYear = 2008
+  Issue = 1
   def index
     @articles = Article.find(:all)
 
@@ -86,7 +86,7 @@ class ArticlesController < ApplicationController
   end
   def home
 
-    @articles = Article.find_all_by_issue_id(current_issue.id)
+    @articles = Article.find_all_by_issue_id(Issue.find_by_current(true).id)
 
     @top_articles = []
     @list_articles = []

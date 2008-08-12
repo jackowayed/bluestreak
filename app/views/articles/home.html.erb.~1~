@@ -1,0 +1,2 @@
+<%= @top_articles.each do |article| %>
+<%= link_to h(article.title), article %>

@@ -92,10 +92,9 @@ end
 #end
 
 def home
-  @word = "foobar"
   @articles = Article.find_all_by_issue_id(Issue.find_by_current(true).id)
-
+  #return @articles = [Article.new] if @articles==nil
   @top_articles = []
   @list_articles = []
-  @articles.each{ |x| ((x.front_rank==-1)?(@list_articles):(@top_articles)) << x }
+  articles.each{ |x| (x.front_rank==-1)?(@list_articles):(@top_articles) << x }
 end

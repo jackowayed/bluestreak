@@ -11,7 +11,5 @@
 <% end -%>
 <p><%=h  @top_articles %></p>
 <p><%=h  @list_articles %></p>
-<p><%= "broken" if @articles==nil && @top_articles==nil &&
-       @list_articles==nil %>
-  <%= @word==nil %>
+<p><%= "broken" if @articles==nil && @top_articles==nil && @list_articles==nil %>
 Articles#home

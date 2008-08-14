@@ -16,7 +16,8 @@
 
      <tr><td><%= link_to "Home", root_path %></td></tr>
      <% for section in sections -%>
-     <tr><td><%= link_to section, (section_path section) %></td></tr>
+     <tr><td><%= link_to section, :controller=>"articles",
+     :action=>"section", :section=>section %></td></tr>
      <% end -%>
 
      <tr><td><%= link_to "Charter Home", "http://www.charterschool.org" %></td></tr>

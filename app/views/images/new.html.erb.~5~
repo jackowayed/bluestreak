@@ -1,6 +1,6 @@
 <h1>New image</h1>
 
-<% form_for(:image, :url => images_path, :html => { :multipart => true }) do |f| %>
+<% form_for(@image) do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -15,7 +15,6 @@
     <%= f.label :article_id %><br />
     <%= f.text_field :article_id %>
   </p>
-<% if false -%>
   <p>
     <%= f.label :filename %><br />
     <%= f.text_field :filename %>
@@ -47,12 +46,6 @@
   <p>
     <%= f.label :created_at %><br />
     <%= f.datetime_select :created_at %>
-  </p>
-
-<% end -%>
-  <p>
-    <label for="uploaded_data">Upload a file:</label>
-    <%= f.file_field :uploaded_data %>
   </p>
   <p>
     <%= f.submit "Create" %>

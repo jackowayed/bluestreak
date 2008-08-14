@@ -1,0 +1,15 @@
+#leftnav {
+  float: left;
+  background-color: #0000FF;
+  padding: 1em;
+  width: 150px;
+}
+#leftnav td{
+  color: white;
+  background-color: #0000FF;
+}
+#leftnav a:link, #leftnav a:hover, #leftnav a:visited, #leftnav a:active {color: #FFFFFF}
+#main {
+  position: absolute;
+  left: 200px;
+}

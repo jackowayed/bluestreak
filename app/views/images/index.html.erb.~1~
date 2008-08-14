@@ -13,7 +13,6 @@
     <th>Parent</th>
     <th>Thumbnail</th>
     <th>Created at</th>
-    <th>Image</th>
   </tr>
 
 <% for image in @images %>
@@ -29,12 +28,9 @@
     <td><%=h image.parent_id %></td>
     <td><%=h image.thumbnail %></td>
     <td><%=h image.created_at %></td>
-    <td><%= image_tag((image.thumbnail)?(image.public_filename):(image.public_filename(:thumb))) %></td>
     <td><%= link_to 'Show', image %></td>
     <td><%= link_to 'Edit', edit_image_path(image) %></td>
-    <td><%= link_to 'Destroy', image, :confirm => 'Are you sure?',
-    :method => :delete %></td>
-
+    <td><%= link_to 'Destroy', image, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

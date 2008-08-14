@@ -9,7 +9,8 @@
   </p>
   <p>
     <%= f.label :section %><br />
-    <%= f.select :section, sections %>
+    <%= f.select :section, %w(Editorial Entertainment Features News
+    School\ News Sports) %>
 
     <!--<%= f.select( :section, options_for_select(["Editorial",
     "Entertainment", "Features", "News", "School News", "Sports"], @article.section))

@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
-  helper_method :make_line_breaks, :current_issue, :sections, :preview, :section_path
+  helper_method :make_line_breaks, :current_issue, :sections
 
 
   def make_line_breaks(str)
@@ -15,15 +15,7 @@ class ApplicationController < ActionController::Base
   def sections
     @sections ||= %w(Editorial Entertainment Features News School\ News Sports)
   end
-  def preview(article, lines)
-    arr = article.body.split("/n")
-    prev = ""
-    (0..lines).each{ |line| prev << arr[line] if arr[line]}
-    prev
-  end
-  def section_path section
-    "/articles/section/" + section.gsub(" ", "_")
-  end
+
 
 
   # See ActionController::RequestForgeryProtection for details

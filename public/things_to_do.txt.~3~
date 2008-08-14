@@ -14,7 +14,7 @@ _ all the pretty visual stuff
 
 _ error handling
 
-% images
+_ images
 
 _ archives
 
@@ -22,6 +22,5 @@ _ search
 
 
 X-done
-%-done but not great (looks like an X but not quite)
 /-partial
 _-to do

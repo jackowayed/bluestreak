@@ -1,13 +1,11 @@
 class Image < ActiveRecord::Base
   belongs_to :article
 
-  has_attachment :content_type => :image,
-                 :storage => :file_system,
-                 :max_size => 500.kilobytes,
-                 :path_prefx => '/public/images',
-                 #:resize_to => '320x200>',
-                 :thumbnails => { :thumb => '100x100>' }
-
-  validates_as_attachment
+  has_attachment  :storage => :file_system,
+                  :max_size => 1.megabytes,
+                  :thumbnails => { :thumb => '80x80>', :tiny => '40x40>' },
+                  :processor => :ImageScience, # attachment_fu looks in this order: ImageScience, Rmagick, MiniMagick
+                  :content_type => :image
+  validates_as_attachment # ok two lines if you want to do validation, and why wouldn't you?
 
 end

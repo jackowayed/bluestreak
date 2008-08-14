@@ -1,11 +1,6 @@
 
 <% @top_articles.each do |article| %>
-  <p style="font-size: 20pt">
-    <%= link_to h(article.title), article %>
-    <%= make_line_breaks h(preview(article.body, 2)) %>
-
-
-  </p>
+<p style="font-size: 20pt"><%= link_to h(article.title), article %></p>
 <% end -%>
 
 
@@ -13,4 +8,5 @@
 <% @list_articles.each do |article| %>
 <p><%= link_to h(article.title), article %></p>
 <% end -%>
+
 

@@ -12,7 +12,6 @@
     <th>Body</th>
     <th>Front rank</th>
     <th>Section rank</th>
-    <th>Image(s)</th>
   </tr>
 
 <% for article in @articles %>
@@ -27,12 +26,6 @@
     <td><%=  make_line_breaks h(article.body) %></td>
     <td><%=h article.front_rank %></td>
     <td><%=h article.section_rank %></td>
-    <td>
-      <% for image in article.images -%>
-        <%= image_tag image.public_filename(:thumb) %>
-      <% end -%>
-
-    </td>
     <!--<td><%= link_to 'Show', article %></td>-->
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>

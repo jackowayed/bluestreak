@@ -1,0 +1,2 @@
+page.insert_html :bottom, "assets", :partial => 'assets/list_item', :object => @asset
+page.visual_effect :highlight, "asset_#{@asset.id}"

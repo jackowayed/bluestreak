@@ -4,24 +4,14 @@ X get a way to track the most recent issue and what's in it
 
 X have sections select just the most recent issue
 
-/ home page
+_ home page
 
 _ have sections/home do previews of bigger articles
 
 _ all the pretty visual stuff
 
-/ verify input
+_ verify input
 
 _ error handling
 
-% images
-
-_ archives
-
-_ search
-
-
-X-done
-%-done but not great (looks like an X but not quite)
-/-partial
-_-to do
+_ images

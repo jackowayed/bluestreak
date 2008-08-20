@@ -32,12 +32,9 @@
   </p>
   <% end -%>
   <p>
-    <%= render :partial=>"issue_select", :locals=>{:f=>f} %>
-<% if false -%>
   <%= f.label :issue_id %>
   <%= f.select(:issue_id, Issue.find(:all).collect{|i|
     [i.school_year.to_s + ":" +i.number.to_s, i.id]}) %>
-<% end -%>
   </p>
   <p>
     <%= f.label :author %><br />

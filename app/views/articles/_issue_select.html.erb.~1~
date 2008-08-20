@@ -1,0 +1,2 @@
+<%= f.select(:issue_id, Issue.find(:all).collect{|i|
+    [i.to_s, i.id]}.reverse) %>

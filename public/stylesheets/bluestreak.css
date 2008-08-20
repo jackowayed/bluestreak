@@ -3,13 +3,29 @@
   background-color: #0000FF;
   padding: 1em;
   width: 150px;
+  margin-top: 0;
 }
 #leftnav td{
   color: white;
   background-color: #0000FF;
 }
-#leftnav a:link, #leftnav a:hover, #leftnav a:visited, #leftnav a:active {color: #FFFFFF}
+#leftnav a:link, #leftnav a:visited, #leftnav a:active {color: #FFFFFF}
+#leftnav a:hover{color: #0000FF; background-color: #FFFFFF}
 #main {
   position: absolute;
   left: 200px;
+}
+p{
+  line-height: 1.2;
+}
+#toparticles p.link {
+  font-size: 20pt;
+  margin-bottom: 0;
+}
+img.topbanner{
+  margin: 0;
+  padding: 0; 
+}
+#main{
+  margin-top: 0;
 }

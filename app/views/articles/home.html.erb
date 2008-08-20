@@ -1,16 +1,24 @@
 
-<% @top_articles.each do |article| %>
-  <p style="font-size: 20pt">
-    <%= link_to h(article.title), article %>
-    <%= make_line_breaks h(preview(article.body, 2)) %>
+<div id="toparticles">
+  <% @top_articles.each do |article| %>
+    <p class="link" >
+      <%= link_to h(article.title), article %>
+    </p>
+    <% for image in article.images -%>
+    <%= image_tag image.public_filename(:thumb) %>
+
+    <% end -%>
+    <p class="preview">
+      <%= make_line_breaks h(preview(article, 3)) %>
 
 
-  </p>
+    </p>
+
+    <% end -%>
+</div>
+
+<div id="listarticles">
+  <% @list_articles.each do |article| %>
+  <p><%= link_to h(article.title), article %></p>
 <% end -%>
-
-
-
-<% @list_articles.each do |article| %>
-<p><%= link_to h(article.title), article %></p>
-<% end -%>
-
+</div>

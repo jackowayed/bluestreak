@@ -28,8 +28,7 @@
   <br />
   <% } -%>-->
 </p>
-<p> Issue:  <%= @article.issue %></p>
-
+<p> <%= current_issue.id %></p>
 
 
 

@@ -2,12 +2,6 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
-
-
-  
-  #layout "articles"
-
-
   helper :all # include all helpers, all the time
   helper_method :make_line_breaks, :current_issue, :sections, :preview, :section_path
 
@@ -22,12 +16,9 @@ class ApplicationController < ActionController::Base
     @sections ||= %w(Editorial Entertainment Features News School\ News Sports)
   end
   def preview(article, lines)
-    @arr = article.body.split("\n")
+    arr = article.body.split("/n")
     prev = ""
-    (0...lines).each{ |line|
-      return prev unless @arr[line]
-      prev << @arr[line]+"\n"
-    }
+    (0..lines).each{ |line| prev << arr[line] if arr[line]}
     prev
   end
   def section_path section
@@ -37,7 +28,7 @@ class ApplicationController < ActionController::Base
 
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
- protect_from_forgery # :secret => '5134887f4b55533cd0807845a4031502'
+  protect_from_forgery # :secret => '5134887f4b55533cd0807845a4031502'
 
   # See ActionController::Base for details
   # Uncomment this to filter the contents of submitted sensitive data parameters

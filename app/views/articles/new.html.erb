@@ -14,17 +14,23 @@
     "Entertainment", "Features", "News", "School News", "Sports"]))%>-->
     <!--<%= f.text_field :section %>-->
   </p>
+<% if "Jennifer" == "l337" -%>
   <p>
     <%= f.label :date %><br />
     <%= f.date_select :date %>
   </p>
+<% end -%>
   <!--<p>
       </p>-->
   <p>
-    <%= f.label :issue_id %><!--<br />
+    <!--<br />
     <%= f.text_field :issue %>-->
+    <%= render :partial => "issue_select", :locals => {:f=>f }%>
+    <% if false -%>
+    <%= f.label :issue_id %>
     <%= f.select(:issue_id, Issue.find(:all).collect{|i|
-    [i.school_year.to_s + ":" +i.number.to_s, i.id]}.reverse) %>
+    [i.to_s, i.id]}.reverse) %>
+    <% end -%>
   </p>
   <p>
     <%= f.label :author %><br />

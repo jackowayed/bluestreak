@@ -2,12 +2,6 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
-
-
-  
-  #layout "articles"
-
-
   helper :all # include all helpers, all the time
   helper_method :make_line_breaks, :current_issue, :sections, :preview, :section_path
 
@@ -37,7 +31,7 @@ class ApplicationController < ActionController::Base
 
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
- protect_from_forgery # :secret => '5134887f4b55533cd0807845a4031502'
+  protect_from_forgery # :secret => '5134887f4b55533cd0807845a4031502'
 
   # See ActionController::Base for details
   # Uncomment this to filter the contents of submitted sensitive data parameters

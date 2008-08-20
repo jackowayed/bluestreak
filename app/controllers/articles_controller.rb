@@ -43,6 +43,7 @@ class ArticlesController < ApplicationController
   # POST /articles.xml
   def create
     @article = Article.new(params[:article])
+    session[:article_id] = @article.id
 
     respond_to do |format|
       if @article.save

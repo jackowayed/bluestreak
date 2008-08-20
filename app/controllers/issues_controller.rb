@@ -1,6 +1,9 @@
 class IssuesController < ApplicationController
   # GET /issues
   # GET /issues.xml
+  
+  #layout "articles"
+
   def index
     @issues = Issue.find(:all)
 

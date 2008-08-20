@@ -1,4 +1,4 @@
-<h1>Editing article</h1>
+<h1>New article</h1>
 
 <% form_for(@article) do |f| %>
   <%= f.error_messages %>
@@ -10,34 +10,23 @@
   <p>
     <%= f.label :section %><br />
     <%= f.select :section, sections %>
-
-    <!--<%= f.select( :section, options_for_select(["Editorial",
-    "Entertainment", "Features", "News", "School News", "Sports"], @article.section))
-    %>-->
+    <!--<%= select_tag( :section, options_for_select(["Editorial",
+    "Entertainment", "Features", "News", "School News", "Sports"]))%>-->
     <!--<%= f.text_field :section %>-->
-
   </p>
+<% if "Jennifer" == "l337" -%>
   <p>
     <%= f.label :date %><br />
     <%= f.date_select :date %>
   </p>
-  <% if "Michael"=="Java Programmer" -%>
-  <p>
-    <%= f.label :school_year %><br />
-    <%= f.text_field :school_year %>
-  </p>
-  <p>
-    <%= f.label :issue %><br />
-    <%= f.text_field :issue %>
-  </p>
-  <% end -%>
-  <p>
-    <%= render :partial=>"issue_select", :locals=>{:f=>f} %>
-<% if false -%>
-  <%= f.label :issue_id %>
-  <%= f.select(:issue_id, Issue.find(:all).collect{|i|
-    [i.school_year.to_s + ":" +i.number.to_s, i.id]}) %>
 <% end -%>
+  <!--<p>
+      </p>-->
+  <p>
+    <%= f.label :issue_id %><!--<br />
+    <%= f.text_field :issue %>-->
+    <%= f.select(:issue_id, Issue.find(:all).collect{|i|
+    [i.school_year.to_s + ":" +i.number.to_s, i.id]}.reverse) %>
   </p>
   <p>
     <%= f.label :author %><br />
@@ -59,10 +48,18 @@
     <%= f.label :section_rank %><br />
     <%= f.text_field :section_rank %>
   </p>
+
+  <% if false -%>
   <p>
-    <%= f.submit "Update" %>
+    <%= f.label :image %>
+    <%= f.file_field :uploaded_data %>
+  </p>
+  <% end -%>
+
+
+  <p>
+    <%= f.submit "Create" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @article %> |
 <%= link_to 'Back', articles_path %>

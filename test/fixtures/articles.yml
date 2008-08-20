@@ -4,8 +4,7 @@ one:
   title: MyString
   section: MyString
   date: 2008-07-30
-  school_year: 1
-  issue: 1
+  issue_id: 1
   author: MyString
   author_position: MyString
   body: MyText
@@ -16,8 +15,7 @@ two:
   title: MyString
   section: MyString
   date: 2008-07-30
-  school_year: 1
-  issue: 1
+  issue_id: 1 
   author: MyString
   author_position: MyString
   body: MyText

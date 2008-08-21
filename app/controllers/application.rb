@@ -4,12 +4,16 @@
 class ApplicationController < ActionController::Base
 
 
+  Username = "foo"
+  Password = "bar"
+
+
   
   #layout "articles"
 
 
   helper :all # include all helpers, all the time
-  helper_method :make_line_breaks, :current_issue, :sections, :preview, :section_path
+  helper_method :make_line_breaks, :current_issue, :sections, :preview, :section_path, :logged_in
 
 
   def make_line_breaks(str)
@@ -24,16 +28,28 @@ class ApplicationController < ActionController::Base
   def preview(article, lines)
     @arr = article.body.split("\n")
     prev = ""
-    (0...lines).each{ |line|
+    (0...lines-1).each{ |line|
       return prev unless @arr[line]
       prev << @arr[line]+"\n"
     }
+    prev<<@arr[lines-1]
     prev
   end
   def section_path section
     "/articles/section/" + section.gsub(" ", "_")
   end
-
+  
+  protected
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == Username && password == Password 
+    end
+  end
+  def logged_in
+    authenticate_with_http_basic do |username, password|
+      username==Username && password == Password
+    end
+  end
 
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store

@@ -5,27 +5,26 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title><%= controller.controller_name.capitalize %>: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
   <%= stylesheet_link_tag 'bluestreak' %>
+  <%= stylesheet_link_tag 'menu' %>
 </head>
 <body>
-<%= image_tag '/bluestreakbanner1.jpg', :class=>"topbanner"-%>
+  <%= image_tag '/bluestreakbanner1.jpg', :class=>"topbanner"-%>
 
-<div id="leftnav">
-   <table border="0" cellpadding>
+  <div id="leftnav">
 
-     <tr><td><%= link_to "Home", root_path %></td></tr>
-     <% for section in sections -%>
-     <tr><td><%= link_to section, (section_path section) %></td></tr>
-     <% end -%>
+       <%= link_to "Home", root_path %>
+      <% for section in sections -%>
+      <%= link_to section, (section_path section) %>
+      <% end -%>
 
-     <tr><td><%= link_to "Charter Home", "http://www.charterschool.org" %></td></tr>
-</table>
-</div>
-<div id="main">
-<p style="color: green"><%= flash[:notice] %></p>
+      <%= link_to "Charter Home", "http://www.charterschool.org" %>
+  
+  </div>
+  <div id="main">
+  <p style="color: green"><%= flash[:notice] %></p>
 <%= yield  %>
-<p><%= link_to "What's Being Added?", "/things_to_do.txt" %></p>
-</div>
+  <p><%= link_to "What's Being Added?", "/things_to_do.txt" %></p>
+  </div>
 </body>
 </html>

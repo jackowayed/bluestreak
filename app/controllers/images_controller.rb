@@ -1,6 +1,8 @@
 class ImagesController < ApplicationController
   # GET /images
   # GET /images.xml
+
+  before_filter :authenticate
   def index
     @images = Image.find(:all)
 
@@ -83,6 +85,11 @@ class ImagesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(images_url) }
       format.xml  { head :ok }
+    end
+  end
+  def update_article_title
+    respond_to do |format|
+      format.js
     end
   end
 end

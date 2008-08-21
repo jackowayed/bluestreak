@@ -9,7 +9,7 @@
 
     <% end -%>
     <p class="preview">
-      <%= make_line_breaks h(preview(article, 3)) %>
+      <%= (make_line_breaks h(preview(article, 3))).chomp %>. . . <%= link_to "Full Story", article %>
 
 
     </p>

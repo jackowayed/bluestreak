@@ -1,0 +1,2 @@
+@image.article_id = page[:article_input]
+page.replace_html 'article_title', article_title

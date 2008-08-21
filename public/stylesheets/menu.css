@@ -1,0 +1,19 @@
+/* Based loosely on 
+ * http://www.cssplay.co.uk/menus/menuone.html*/
+
+#leftnav a, #leftnav a:visited {
+  text-align:center; 
+  text-decoration:none; 
+  font-family: times;
+  color:#fff; 
+  display:block; 
+  width: 150px; 
+  height:1.2em; 
+  font-size: 14pt;
+  /*border:0.5em solid #fff; */
+  }
+#leftnav a:hover {
+  color:#4e7a93;
+  background-color:#FFF; 
+  }
+

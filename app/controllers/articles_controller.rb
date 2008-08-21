@@ -3,6 +3,9 @@ class ArticlesController < ApplicationController
   # GET /articles.xml
   #SchoolYear = 2008
   #Issue = 1
+  
+  before_filter :authenticate, :except => [:show, :home, :section]
+  
   def index
     @articles = Article.find(:all)
     current_issue
@@ -43,7 +46,6 @@ class ArticlesController < ApplicationController
   # POST /articles.xml
   def create
     @article = Article.new(params[:article])
-    session[:article_id] = @article.id
 
     respond_to do |format|
       if @article.save

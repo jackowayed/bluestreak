@@ -1,4 +1,4 @@
-_ get logins working. stop public from being able to edit/destroy
+X get logins working. stop public from being able to edit/destroy
 
 X get a way to track the most recent issue and what's in it
 
@@ -8,13 +8,13 @@ X have sections select just the most recent issue
 
 X have sections/home do previews of bigger articles
 
-_ all the pretty visual stuff
+/ all the pretty visual stuff
 
 / verify input
 
 _ error handling
 
-% images
+X images
 
 _ archives
 

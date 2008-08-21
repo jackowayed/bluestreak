@@ -4,6 +4,8 @@ class IssuesController < ApplicationController
   
   #layout "articles"
 
+  before_filter :authenticate
+  
   def index
     @issues = Issue.find(:all)
 

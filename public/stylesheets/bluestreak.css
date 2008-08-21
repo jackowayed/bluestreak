@@ -1,22 +1,25 @@
 #leftnav {
   float: left;
-  background-color: #0000FF;
-  padding: 1em;
+  background-color: #4e7a93;
+  padding: 0;
   width: 150px;
   margin-top: 0;
+  margin-left: 0;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  position: relative;
 }
-#leftnav td{
-  color: white;
-  background-color: #0000FF;
-}
-#leftnav a:link, #leftnav a:visited, #leftnav a:active {color: #FFFFFF}
-#leftnav a:hover{color: #0000FF; background-color: #FFFFFF}
 #main {
-  position: absolute;
-  left: 200px;
+  position: relative;
+  left: 10px;
+  top: -30px;
+  padding; .5em;
+  margin-left: 160px;
 }
 p{
   line-height: 1.2;
+  font-family: times;
+  font-size: 12pt;
 }
 #toparticles p.link {
   font-size: 20pt;
@@ -28,4 +31,44 @@ img.topbanner{
 }
 #main{
   margin-top: 0;
+}
+/* from the scaffolded stylesheet*/
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
 }

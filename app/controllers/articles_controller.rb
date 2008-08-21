@@ -19,6 +19,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1.xml
   def show
     @article = Article.find(params[:id])
+    session[:article_id] = @article.id
 
     respond_to do |format|
       format.html # show.html.erb

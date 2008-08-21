@@ -13,20 +13,13 @@
 
 
 <p>
-
   <%= make_line_breaks h(@article.body) %>
-
-
-  <!--<% text=@article.body.split("\n")
-     text.each{|x| %>
-  <%= x %>
-  <br />
-  <% } -%>-->
 </p>
+
 <p> Issue:  <%= @article.issue %></p>
 
 
-<%  if logged_in %>
+<%  if logged_in? %>
   <%= link_to 'Edit', edit_article_path(@article) %> |
   <%= link_to 'Back', articles_path %> |
   <%= link_to 'Add an image to this article', new_image_path %>

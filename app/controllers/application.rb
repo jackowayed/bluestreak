@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
 
 
   helper :all # include all helpers, all the time
-  helper_method :make_line_breaks, :current_issue, :sections, :preview, :section_path, :logged_in
+  helper_method :make_line_breaks, :current_issue, :sections, :preview, :section_path, :logged_in?
 
 
   def make_line_breaks(str)
@@ -45,9 +45,9 @@ class ApplicationController < ActionController::Base
       username == Username && password == Password 
     end
   end
-  def logged_in
+  def logged_in?
     authenticate_with_http_basic do |username, password|
-      username==Username && password == Password
+      username == Username && password == Password  
     end
   end
 

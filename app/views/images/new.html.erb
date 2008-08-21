@@ -1,3 +1,4 @@
+<%= javascript_include_tag :defaults %>
 <h1>New image</h1>
 
 <% form_for(:image, :url => images_path, :html => { :multipart => true }) do |f| %>
@@ -13,8 +14,8 @@
   </p>
   <p>
     <%= f.label :article_id %><br />
-    <%= f.text_field :article_id, :size => 5, :id=>"article_input", :onchange=>remote_function(:action=>:update_article_title )%>
-    Article tite: <%= label_tag '', article_title, :id=>"article_title" %> 
+    <%= f.text_field :article_id, :size => 5, :id => "article_input", :onchange => remote_function(:url => {:action => :update_article_title} )%>
+    Article tite: <%= label_tag '', article_title, :id => "article_title" %> 
   </p>
 <% if false -%>
   <p>

@@ -1,0 +1,24 @@
+  [4;36;1mSQL (0.050908)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.059099)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.179289)[0m   [0;1mCREATE DATABASE `bluestreak_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.043787)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.016859)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000803)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000340)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000305)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000429)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000336)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.115436)[0m   [0;1mDROP DATABASE IF EXISTS `bluestreak_test`[0m
+  [4;36;1mSQL (0.000399)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000333)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.024073)[0m   [0;1mCREATE DATABASE `bluestreak_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+  [4;36;1mSQL (0.000443)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000331)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000291)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000491)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000355)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000332)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000474)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000336)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000237)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000329)[0m   [0mROLLBACK[0m

@@ -1,6 +1,5 @@
-<%= javascript_include_tag :defaults %>
+<%= javascript_include_tag 'jquery', 'article_title_change' %>
 <h1>New image</h1>
-
 <% form_for(:image, :url => images_path, :html => { :multipart => true }) do |f| %>
   <%= f.error_messages %>
 
@@ -14,7 +13,7 @@
   </p>
   <p>
     <%= f.label :article_id %><br />
-    <%= f.text_field :article_id, :size => 5, :id => "article_input", :onchange => remote_function(:url => {:action => :update_article_title} )%>
+    <%= f.text_field :article_id, :size => 5, :id => "article_input" %>
     Article tite: <%= label_tag '', article_title, :id => "article_title" %> 
   </p>
 <% if false -%>

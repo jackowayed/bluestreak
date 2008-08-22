@@ -90,14 +90,20 @@ class ArticlesController < ApplicationController
     end
   end
   def home
-
-   @articles = Article.find_all_by_issue_id(current_issue.id)
+    @articles = current_issue.articles
+    #@articles = Article.find_all_by_issue_id(current_issue.id)
 #    @articles = Article.find_all_by_issue_id(Issue.find_by_current(true).id)
-    @top_articles = []
-    @list_articles = []
-    @articles.each{ |x| ((x.front_rank==-1)?(@list_articles):(@top_articles)) << x }
+    split_articles @articles
   end
   def section
     @articles = current_issue.articles.find_all_by_section(params[:name].capitalize)
+    split_articles @articles
+  end
+  def split_articles(articles)
+    @top_articles = []
+    @list_articles = []
+    articles.each{ |x| ((x.front_rank==-1)?(@list_articles):(@top_articles)) << x } 
   end
 end
+
+

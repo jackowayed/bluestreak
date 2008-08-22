@@ -1,7 +1,6 @@
 <h1>New image</h1>
 <% form_for(:image, :url => images_path, :html => { :multipart => true }) do |f| %>
   <%= f.error_messages %>
-
   <p>
     <%= f.label :caption %><br />
     <%= f.text_field :caption %>
@@ -16,6 +15,7 @@
     Article tite: <%= label_tag '', article_title, :id => "article_title" %> 
   </p>
 <% if false -%>
+
   <p>
     <%= f.label :filename %><br />
     <%= f.text_field :filename %>

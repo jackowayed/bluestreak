@@ -25,7 +25,11 @@
   </div>
   <div id="main">
   <p style="color: green"><%= flash[:notice] %></p>
+
+
 <%= yield  %>
+
+
   <p><%= link_to "What's Being Added?", "/things_to_do.txt" %></p>
   </div>
 </body>

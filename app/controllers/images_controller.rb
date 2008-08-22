@@ -27,7 +27,7 @@ class ImagesController < ApplicationController
   # GET /images/new.xml
   def new
     @image = Image.new
-    @image.article_id = session[:article_id]
+    @image.article_id = session[:article_id] || 0
 
     respond_to do |format|
       format.html # new.html.erb

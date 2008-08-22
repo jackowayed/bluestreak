@@ -2,12 +2,13 @@
 jQuery(document).ready(function() {
   $("#article_input").change( function(){
     //$("*").css("color", "#F00");
-    
-    var article = $('#article_input').text()
+    $("#topheader").toggle()
+    var article = $('#article_input').attr("value")
+    $("#article_title").text(article)
     $.getJSON("/articles/"+article,
     function(data){
-      if (data!=null&&data.title!=null)  
-        $('#article_title').text(data.title)
+      //if (data!=null&&data.title!=null)  
+        $('#article_title').text(data)
     });
   });
   

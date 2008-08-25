@@ -42,15 +42,17 @@ class ApplicationController < ActionController::Base
   protected
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
-      username == Username && password == Password 
+      user_pass_right?(username, password)
     end
   end
   def logged_in?
     authenticate_with_http_basic do |username, password|
-      username == Username && password == Password  
+      user_pass_right? username, password
     end
   end
-
+  def user_pass_right?(username, password)
+    username == Username && password == Password
+  end
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
  protect_from_forgery # :secret => '5134887f4b55533cd0807845a4031502'

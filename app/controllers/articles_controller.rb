@@ -24,7 +24,7 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @article }
-      format.json
+      format.json { render :json => @article }
     end
   end
 

@@ -12,7 +12,7 @@
 </head>
 <body>
   <%= image_tag '/bluestreakbanner1.jpg', :class=>"topbanner"-%>
-
+  <div id="container">
   <div id="leftnav">
 
        <%= link_to "Home", root_path %>
@@ -31,6 +31,10 @@
 
 
   <p><%= link_to "What's Being Added?", "/things_to_do.txt" %></p>
+  </div>
+  <div id="footer">
+    Bluestreak |  Charter School of Wilmington Newspaper |  Copyright <%= Time.now.year %>
+  </div>
   </div>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <%= link_to h(article.title), article %>
   </p>
   <% for image in article.images -%>
-  <%= image_tag image.public_filename(:thumb) %>
+  <%= image_tag image.public_filename(:preview) %>
 
   <% end -%>
   <p class="preview">

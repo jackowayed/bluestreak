@@ -11,9 +11,9 @@
 }
 #main {
   position: relative;
-  left: 10px;
-  top: -30px;
-  padding: .5em;
+  /*left: 10px;
+  top: -30px;*/
+  padding-left: .5em;
   margin-left: 160px;
 }
 p{
@@ -31,7 +31,21 @@ img.topbanner{
 }
 #main{
   margin-top: 0;
+  background-color: #FFF;
 }
+#footer{
+  background-color: #4e7a93;
+  color: #FFF;
+  clear: both;
+  padding: .5em;
+}
+#container{
+  background-color: #4e7a93;
+}
+
+
+
+
 /* from the scaffolded stylesheet*/
 a { color: #000; }
 a:visited { color: #666; }

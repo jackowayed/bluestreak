@@ -7,5 +7,4 @@ class Image < ActiveRecord::Base
                   :processor => :ImageScience, # attachment_fu looks in this order: ImageScience, Rmagick, MiniMagick
                   :content_type => :image
   validates_as_attachment # ok two lines if you want to do validation, and why wouldn't you?
-
 end

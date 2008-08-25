@@ -20,6 +20,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     session[:article_id] = @article.id
+    logger.info @article.to_json
 
     respond_to do |format|
       format.html # show.html.erb
